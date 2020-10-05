@@ -1,5 +1,5 @@
 <template>
-  <div id="container"></div>
+  <div id="container">x</div>
 </template>
 
 <script>
@@ -24,7 +24,7 @@ export default {
     };
   },
   methods: {
-    init: function () {
+    init: function() {
       var container = document.getElementById("container");
 
       this.renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -170,7 +170,7 @@ export default {
         }
       });
 
-      window.addEventListener("keyup", function (event) {
+      window.addEventListener("keyup", function(event) {
         switch (event.keyCode) {
           case 16: // Shift
             this.control.setTranslationSnap(null);
